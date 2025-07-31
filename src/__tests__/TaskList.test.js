@@ -1,9 +1,13 @@
-import "@testing-library/jest-dom";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import TaskList from "../components/TaskList";
-import { TASKS } from "../data";
 
-test("displays all items when initially rendered", () => {
-  const { container } = render(<TaskList tasks={TASKS} />);
-  expect(container.querySelectorAll(".task")).toHaveLength(TASKS.length);
+test("renders task list", () => {
+  const tasks = [
+    { text: "One", category: "Code" },
+    { text: "Two", category: "Food" }
+  ];
+  render(<TaskList tasks={tasks} onDeleteTask={() => {}} />);
+  expect(screen.getByText("One")).toBeInTheDocument();
+  expect(screen.getByText("Two")).toBeInTheDocument();
 });
+
