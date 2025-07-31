@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import CategoryFilter from '../CategoryFilter';
+import CategoryFilter from '../components/CategoryFilter';
+
 
 
 test("renders category buttons", () => {

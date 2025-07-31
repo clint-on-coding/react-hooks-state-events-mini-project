@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import Task from '../Task';
+import Task from '../components/Task';
 
 
 test("renders task text and category", () => {

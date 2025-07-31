@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import NewTaskForm from '../NewTaskForm';
+import NewTaskForm from '../components/NewTaskForm';
 
 
 test("renders form inputs", () => {
