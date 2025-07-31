@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import NewTaskForm from "../components/NewTaskForm";
+import NewTaskForm from '../NewTaskForm';
+
 
 test("renders form inputs", () => {
   const categories = ["All", "Code", "Food"];

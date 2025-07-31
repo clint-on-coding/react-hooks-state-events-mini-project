@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import TaskList from "../components/TaskList";
+import TaskList from '../TaskList';
 
 test("renders task list", () => {
   const tasks = [

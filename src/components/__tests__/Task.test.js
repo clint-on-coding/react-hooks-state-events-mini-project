@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import Task from "../components/Task";
+import Task from '../Task';
+
 
 test("renders task text and category", () => {
   render(<Task text="Learn React" category="Code" onDeleteTask={() => {}} />);
